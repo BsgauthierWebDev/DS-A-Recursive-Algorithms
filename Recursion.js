@@ -91,7 +91,7 @@ let maze = [
 ];
 
 const mazePath = function(maze) {
-    const completed = [],
+    const completed = []
     const mazeRun = function(curtMaze, curtLocation, letters = '') {
         //Check if you can go right
         if (curtLocation[1] < curtMaze[0].length - 1) {
@@ -175,7 +175,7 @@ const mazePath = function(maze) {
 
 //9. Find ALL ways out of the maze
 const mazeAllPaths = function(maze) {
-    const completed = [],
+    const completed = []
     const mazeRun = function(curtMaze, curtLocation, letters = '') {
         //Check if you can go right
         if (curtLocation[1] < curtMaze[0].length - 1) {
@@ -344,4 +344,4 @@ const binary = function(number) {
     return number.toString(2)
 }
 
-//console.log(binary(3));
+console.log(binary(3));
