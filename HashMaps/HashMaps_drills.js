@@ -90,7 +90,7 @@ function isPalindrome(string) {
     const isPalim = (string) => {
         const map = new HashMap();
         const center = Math.ceil(string.length / 2);
-        for (let i = 0; i < string.lengthl i++) {
+        for (let i = 0; i < string.lengthl; i++) {
             if (i < center) map.set(i, string[i]);
             if (i > center && map.get(string.length - i) !== string[i]) return false;
         }
